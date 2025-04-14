@@ -1,0 +1,280 @@
+{
+  "users": [
+    { "id": 1, "username": "tech_guru", "email": "guru@example.com" },
+    { "id": 2, "username": "fixit_fred", "email": "fred@example.com" },
+    { "id": 3, "username": "repair_queen", "email": "queen@example.com" },
+    { "id": 4, "username": "mike_tools", "email": "mike@example.com" },
+    { "id": 5, "username": "handy_andy", "email": "andy@example.com" },
+    { "id": 6, "username": "sarah_wrench", "email": "sarah@example.com" },
+    { "id": 7, "username": "plumb_bob", "email": "bob@example.com" },
+    { "id": 8, "username": "electric_eli", "email": "eli@example.com" },
+    { "id": 9, "username": "cool_kate", "email": "kate@example.com" },
+    { "id": 10, "username": "dr_fix", "email": "drfix@example.com" }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "email": "alice@example.com",
+      "phone": "555-1234",
+      "address": "123 Maple Street"
+    },
+    {
+      "id": 2,
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "email": "bob.j@example.com",
+      "phone": "555-5678",
+      "address": "456 Oak Avenue"
+    },
+    {
+      "id": 3,
+      "firstName": "Carol",
+      "lastName": "Davis",
+      "email": "carol@example.com",
+      "phone": "555-8765",
+      "address": "789 Pine Lane"
+    },
+    {
+      "id": 4,
+      "firstName": "Dan",
+      "lastName": "Brown",
+      "email": "dan@example.com",
+      "phone": "555-4321",
+      "address": "321 Birch Road"
+    },
+    {
+      "id": 5,
+      "firstName": "Eve",
+      "lastName": "Wilson",
+      "email": "eve@example.com",
+      "phone": "555-9876",
+      "address": "654 Cedar Blvd"
+    }
+  ],
+  "repairs": [
+    {
+      "id": 1,
+      "title": "Fridge Compressor Fix",
+      "clientId": 1,
+      "date": "2025-04-01",
+      "description": "Replaced faulty compressor.",
+      "comments": "Customer happy with the service.",
+      "price": 220,
+      "discount": 10,
+      "address": "123 Maple Street",
+      "futureRepair": "Check ice maker in 3 months"
+    },
+    {
+      "id": 2,
+      "title": "Washing Machine Noise",
+      "clientId": 2,
+      "date": "2025-04-02",
+      "description": "Adjusted drum and tightened screws.",
+      "comments": "",
+      "price": 90,
+      "discount": 5,
+      "address": "456 Oak Avenue"
+    },
+    {
+      "id": 3,
+      "title": "Oven Not Heating",
+      "clientId": 3,
+      "date": "2025-04-03",
+      "description": "Replaced heating element.",
+      "comments": "Quick fix.",
+      "price": 150,
+      "discount": 0,
+      "address": "789 Pine Lane"
+    },
+    {
+      "id": 4,
+      "title": "Microwave Sparks",
+      "clientId": 4,
+      "date": "2025-04-03",
+      "description": "Cleaned interior and replaced waveguide cover.",
+      "comments": "",
+      "price": 75,
+      "discount": 0,
+      "address": "321 Birch Road"
+    },
+    {
+      "id": 5,
+      "title": "Dishwasher Leak",
+      "clientId": 5,
+      "date": "2025-04-04",
+      "description": "Replaced door gasket.",
+      "comments": "Recommended gasket check annually.",
+      "price": 110,
+      "discount": 10,
+      "address": "654 Cedar Blvd",
+      "futureRepair": "Follow-up in 6 months"
+    },
+    {
+      "id": 6,
+      "title": "Fridge Door Seal",
+      "clientId": 1,
+      "date": "2025-04-04",
+      "description": "New seal installed.",
+      "comments": "",
+      "price": 60,
+      "discount": 5,
+      "address": "123 Maple Street"
+    },
+    {
+      "id": 7,
+      "title": "Dryer Overheating",
+      "clientId": 2,
+      "date": "2025-04-05",
+      "description": "Cleaned vent and replaced thermostat.",
+      "comments": "",
+      "price": 140,
+      "discount": 15,
+      "address": "456 Oak Avenue"
+    },
+    {
+      "id": 8,
+      "title": "Freezer Ice Buildup",
+      "clientId": 3,
+      "date": "2025-04-05",
+      "description": "Fixed defrost timer.",
+      "comments": "",
+      "price": 130,
+      "discount": 5,
+      "address": "789 Pine Lane"
+    },
+    {
+      "id": 9,
+      "title": "Washer Drain Issue",
+      "clientId": 4,
+      "date": "2025-04-06",
+      "description": "Cleared clogged drain.",
+      "comments": "",
+      "price": 80,
+      "discount": 0,
+      "address": "321 Birch Road"
+    },
+    {
+      "id": 10,
+      "title": "AC Not Cooling",
+      "clientId": 5,
+      "date": "2025-04-07",
+      "description": "Recharged refrigerant.",
+      "comments": "",
+      "price": 200,
+      "discount": 20,
+      "address": "654 Cedar Blvd"
+    },
+    {
+      "id": 11,
+      "title": "Microwave Buttons Unresponsive",
+      "clientId": 1,
+      "date": "2025-04-08",
+      "description": "Replaced control panel.",
+      "comments": "",
+      "price": 160,
+      "discount": 0,
+      "address": "123 Maple Street"
+    },
+    {
+      "id": 12,
+      "title": "Stove Gas Leak",
+      "clientId": 2,
+      "date": "2025-04-09",
+      "description": "Replaced faulty valve.",
+      "comments": "Tested thoroughly after repair.",
+      "price": 180,
+      "discount": 5,
+      "address": "456 Oak Avenue"
+    },
+    {
+      "id": 13,
+      "title": "Dryer Belt Replacement",
+      "clientId": 3,
+      "date": "2025-04-10",
+      "description": "Installed new belt.",
+      "comments": "",
+      "price": 95,
+      "discount": 0,
+      "address": "789 Pine Lane"
+    },
+    {
+      "id": 14,
+      "title": "Fridge Ice Maker",
+      "clientId": 4,
+      "date": "2025-04-11",
+      "description": "Replaced motor.",
+      "comments": "",
+      "price": 145,
+      "discount": 10,
+      "address": "321 Birch Road"
+    },
+    {
+      "id": 15,
+      "title": "Washing Machine Smell",
+      "clientId": 5,
+      "date": "2025-04-12",
+      "description": "Cleaned tub and replaced hose.",
+      "comments": "",
+      "price": 85,
+      "discount": 0,
+      "address": "654 Cedar Blvd"
+    },
+    {
+      "id": 16,
+      "title": "Oven Door Not Closing",
+      "clientId": 1,
+      "date": "2025-04-13",
+      "description": "Adjusted hinges.",
+      "comments": "",
+      "price": 70,
+      "discount": 5,
+      "address": "123 Maple Street"
+    },
+    {
+      "id": 17,
+      "title": "Microwave Fuse",
+      "clientId": 2,
+      "date": "2025-04-14",
+      "description": "Replaced internal fuse.",
+      "comments": "",
+      "price": 50,
+      "discount": 0,
+      "address": "456 Oak Avenue"
+    },
+    {
+      "id": 18,
+      "title": "Fridge Noise",
+      "clientId": 3,
+      "date": "2025-04-14",
+      "description": "Tightened compressor mounts.",
+      "comments": "",
+      "price": 65,
+      "discount": 0,
+      "address": "789 Pine Lane"
+    },
+    {
+      "id": 19,
+      "title": "Dishwasher Not Draining",
+      "clientId": 4,
+      "date": "2025-04-15",
+      "description": "Cleared food debris from pump.",
+      "comments": "",
+      "price": 90,
+      "discount": 10,
+      "address": "321 Birch Road"
+    },
+    {
+      "id": 20,
+      "title": "AC Fan Not Working",
+      "clientId": 5,
+      "date": "2025-04-15",
+      "description": "Replaced capacitor.",
+      "comments": "Fan working smoothly now.",
+      "price": 115,
+      "discount": 5,
+      "address": "654 Cedar Blvd"
+    }
+  ]
+}
