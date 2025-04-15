@@ -7,10 +7,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import {usePathname} from "next/navigation";
 import {useEffect, useState} from "react";
+import {useSearch} from "@/context/SearchContext";
 
 function NavigationBar() {
     const [showButtons, setShowButtons] = useState(false)
     const pathname = usePathname();
+    const {searchQuery, setSearchQuery} = useSearch();
 
     useEffect(() => {
         setShowButtons(pathname !== '/');
@@ -51,6 +53,8 @@ function NavigationBar() {
                                 placeholder="Search"
                                 className="me-2"
                                 aria-label="Search"
+                                value={searchQuery}
+                                onChange={e => setSearchQuery(e.target.value)}
                             />
                             <Button variant="outline-success">Search</Button>
                         </Form>

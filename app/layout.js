@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "@/components/NavigationBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {SearchProvider} from "@/context/SearchContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,14 +23,15 @@ export default function RootLayout({ children }) {
   return (
       <html lang="en">
       <body className="d-flex flex-column min-vh-100">
-
-      <NavigationBar/>
-      <main className="flex-grow-1">
-          {children}
-      </main>
-      <footer className="bg-light text-center text-muted py-3">
-          © {new Date().getFullYear()} MyApp. All rights reserved.
-      </footer>
+      <SearchProvider>
+          <NavigationBar/>
+          <main className="flex-grow-1">
+              {children}
+          </main>
+          <footer className="bg-light text-center text-muted py-3">
+              © {new Date().getFullYear()} MyApp. All rights reserved.
+          </footer>
+      </SearchProvider>
       </body>
       </html>
   );
